@@ -24,7 +24,7 @@
 </head>
 <body>
 
-<canvas id="gameCanvas" width="800" height="400"></canvas>
+<canvas id="gameCanvas" width="1300" height="650"></canvas>
 
 <script>
     const canvas = document.getElementById("gameCanvas");
@@ -43,7 +43,7 @@
         velocityX: 0,
         velocityY: 0,
         speed: 2,
-        jumpForce: -10,
+        jumpForce: -13,
         grounded: false,
         jumping: false,
         color: "#e74c3c"
@@ -58,11 +58,13 @@
 
     // Plataformas do jogo [x, y, width, height]
     const platforms = [
-        [0, 380, 800, 20],   // Chão
-        [100, 300, 150, 20],  // Plataforma 1
-        [300, 220, 200, 20],  // Plataforma 2
+        [0, 550, 1300, 20],   // Chão
+        [100, 400, 150, 20],  // Plataforma 1
+        [300, 300, 200, 20],  // Plataforma 2
         [550, 150, 150, 20],  // Plataforma 3
-        [150, 100, 120, 20]   // Plataforma 4
+        [150, 100, 120, 20],   // Plataforma 4
+        [1000, 100, 120, 20],   // Plataforma 5
+        [850, 300, 120, 20]   // Plataforma 4
     ];
 
     // Detecção de colisão entre dois retângulos
@@ -158,3 +160,4 @@
 
 </body>
 </html>
+
